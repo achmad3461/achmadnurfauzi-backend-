@@ -1,0 +1,15 @@
+const arr = [9, 4, 2, 4, 1, 5, 3, 0];
+
+const odd = arr.filter(i => i%2 !== 0).sort();
+let i = 0,
+  result = [];
+arr.forEach(e => {
+  if (e%2 === 0) {
+    result.push(e)
+  } else {
+    result.push(odd[i]);
+    i++;
+  }
+});
+
+console.log(result);
