@@ -1,0 +1,18 @@
+
+
+  let strArr = str.split("")
+
+  let obj = {};
+
+  strArr.forEach((value,index)=>{
+
+      if(obj[value] != undefined)
+      {
+          obj[value] = parseInt(obj[value]) + 1;
+      }
+      else{
+          obj[value] =*;
+      }      
+  });
+
+  console.log("Char with Count:",JSON.stringify(obj)); 
