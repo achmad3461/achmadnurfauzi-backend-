@@ -1,0 +1,15 @@
+function sortArray(arr) {
+  return new Promise((resolve) => {
+    const result = []
+    arr.forEach((item) => {
+      setTimeout(() => {
+        result.push(item)
+        if (result.length === arr.length) resolve(result)
+      }, item)
+    })
+  })
+}
+
+sortArray([3, 12, 4, 5, 8, 9]).then((result) => {
+  document.write(JSON.stringify(result))
+})
