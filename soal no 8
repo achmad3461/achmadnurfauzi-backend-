@@ -1,0 +1,5 @@
+var input = "23dn3ir30fd2eddd";
+var length = input.Length;
+var result = new String('*', length - 3) + input.Substring(length - 3);
+
+Console.WriteLine(result);
